@@ -11,7 +11,8 @@ const passportLocalMongoose = require("passport-local-mongoose");
 var GoogleStrategy = require("passport-google-oauth20").Strategy;
 const findOrCreate = require("mongoose-findorcreate");
 
-mongoose.connect("mongodb://localhost:27017/Users", {
+const password = process.env.MONGO_PASSWORD
+mongoose.connect("mongodb+srv://isidore:"+password+"@cluster0.moypk.mongodb.net/UsersDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -82,7 +83,13 @@ passport.use(
   )
 );
 
-app.listen(process.env.PORT, function () {
+
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+app.listen(port, function () {
   console.log("Server started on port 3000");
 });
 

@@ -1,0 +1,38 @@
+{
+  "name": "isidore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.0.5",
+    "mongoose-encryption": "^2.1.0",
+    "mongoose-findorcreate": "^3.0.0",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-facebook": "^3.0.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alcimovich-NOUBISSI/authentication-application-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "14.17.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Alcimovich-NOUBISSI/authentication-application-/issues"
+  },
+  "homepage": "https://github.com/Alcimovich-NOUBISSI/authentication-application-#readme"
+  
+}
